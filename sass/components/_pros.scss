@@ -1,0 +1,48 @@
+.pros-section {
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+
+.hidden-heading {
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.pros-list {
+  display: flex;
+}
+
+.pros-list-item {
+  text-align: left;
+  width: calc((100% - 90px) / 4);
+}
+
+.pros-heading,
+.social-call {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.pros-discription {
+  line-height: 1.71;
+  color: $tertiary-color;
+}
+
+.pros-icon-bg {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $secondary-background-color;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

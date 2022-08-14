@@ -1,0 +1,20 @@
+.footer-socials {
+  margin-left: 70px;
+}
+
+.social-call {
+  color: $quaternary-color;
+  margin-bottom: 20px;
+}
+
+.footer-socials .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition-dur-and-func;
+}
+.footer-socials .social-icon {
+  fill: $quaternary-color;
+}
+.footer-socials .social-link:hover,
+.footer-socials .social-link:focus {
+  background-color: $secondary-color;
+}

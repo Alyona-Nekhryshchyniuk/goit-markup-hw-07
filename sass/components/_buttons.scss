@@ -1,0 +1,30 @@
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.hero-button,
+.subscribtion-button,
+.modal-form-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $quaternary-color;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  transition: background-color $transition-dur-and-func;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.subscribtion-button:hover,
+.subscribtion-button:focus,
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: $sporadic-background-color;
+}

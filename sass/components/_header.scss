@@ -1,0 +1,93 @@
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+header > .container {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  display: inline;
+}
+
+nav {
+  margin-left: 100px;
+}
+
+header a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.nav-item:nth-child(1) {
+  margin-right: 55px;
+}
+
+.nav-item:nth-child(2) {
+  margin-right: 70px;
+}
+
+.tel-link {
+  margin-left: 30px;
+}
+
+.mail-link,
+.tel-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-list {
+  color: $tertiary-color;
+  margin-left: auto;
+}
+
+header a,
+footer a {
+  transition: color $transition-dur-and-func;
+}
+
+header a:hover,
+header a:focus,
+footer a:hover,
+footer a:focus {
+  outline: 0px;
+  color: $secondary-color;
+}
+
+.mail-link:hover .header-icon,
+.mail-link:focus .header-icon,
+.tel-link:hover .header-icon,
+.tel-link:focus .header-icon {
+  fill: $secondary-color;
+}
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  transition: fill $transition-dur-and-func;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.current:hover,
+.current:focus {
+  color: $secondary-color;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  top: 47.1px;
+  left: 0;
+  background-color: $secondary-color;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
