@@ -29,7 +29,7 @@
   padding: 40px 40px 0px 40px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -47,15 +47,15 @@
   transition: border $transition-dur-and-func;
 }
 
-.close-modal-icon {
+.close-icon {
   transition: fill $transition-dur-and-func;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   outline: 0;
 }
-.modal-close-btn:hover .close-modal-icon,
-.modal-close-btn:focus .close-modal-icon {
+.modal__close-btn:hover .close-icon,
+.modal__close-btn:focus .close-icon {
   fill: $secondary-color;
 }

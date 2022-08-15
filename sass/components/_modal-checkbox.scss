@@ -1,4 +1,4 @@
-.checkbox-label {
+.modal__checkbox-label {
   position: relative;
   font-size: 14px;
   line-height: 1.7;
@@ -6,14 +6,14 @@
   padding-left: 37px;
 }
 
-.original-checkbox {
+.modal__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin-right: 13px;
 }
 
-.checkbox-label::before {
+.modal__checkbox-label::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -25,7 +25,7 @@
   border: 1.5px solid #212121;
 }
 
-.original-checkbox:checked + .checkbox-label::before {
+.modal__checkbox:checked + .modal__checkbox-label::before {
   background-color: $secondary-color;
   background-image: url(../images/check-mark.svg);
   background-repeat: no-repeat;

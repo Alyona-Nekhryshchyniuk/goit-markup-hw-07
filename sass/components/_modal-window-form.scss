@@ -1,10 +1,10 @@
-.modal-window-form {
+.modal {
   display: flex;
   flex-direction: column;
   color: $tertiary-color;
 }
 
-.modal-window-call {
+.modal__call {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -12,7 +12,7 @@
   margin-bottom: 12px;
   color: $primary-color;
 }
-.modal-form-label {
+.modal__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -20,7 +20,7 @@
   letter-spacing: 0.01em;
 }
 
-.modal-form-textarea {
+.modal__textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -33,50 +33,50 @@ textarea::placeholder {
 }
 
 textarea::placeholder,
-.modal-form-input {
+.modal__input {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 }
 
-.modal-form-textarea,
-.modal-form-input {
+.modal__textarea,
+.modal__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.input-and-svg-container {
+.modal__input-and-svg {
   display: block;
   position: relative;
   height: 100%;
 }
-.label-and-input-container {
+.modal__label-and-input {
   margin-bottom: 10px;
 }
 
-.modal-form-input {
+.modal__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
 }
 
-.modal-form-input:focus + svg {
+.modal__input:focus + svg {
   fill: $secondary-color;
 }
 
-.modal-form-input:focus,
-.modal-form-textarea:focus {
+.modal__input:focus,
+.modal__textarea:focus {
   border: 1px solid $secondary-color;
   outline: none;
 }
-.modal-form-svg {
+.modal-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
 }
 
-.modal-form-button {
+.modal-button {
   padding: 10px 80px;
   margin-top: 30px;
   align-self: center;

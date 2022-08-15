@@ -7,9 +7,18 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.footer-contacts-and-socials-container {
+.contacts-and-socials-container {
   display: flex;
   align-items: baseline;
+}
+.footer a {
+  transition: color $transition-dur-and-func;
+}
+
+.footer a:hover,
+.footer a:focus {
+  outline: 0px;
+  color: $secondary-color;
 }
 
 address {

@@ -28,8 +28,8 @@ img {
   display: block;
 }
 
-.pros-list-item:not(:last-child),
-.work-example:not(:last-child),
-.team-card:not(:last-child) {
+.pros-list__item:not(:last-child),
+.works-list__item:not(:last-child),
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }

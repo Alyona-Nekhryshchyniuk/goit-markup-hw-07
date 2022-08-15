@@ -1,43 +1,37 @@
-header {
+.header {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
-header > .container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-header li {
+.contact-list__item,
+.nav__item {
   display: inline;
 }
 
-nav {
+.nav {
   margin-left: 100px;
 }
 
-header a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-.nav-item:nth-child(1) {
+.nav__item:nth-child(1) {
   margin-right: 55px;
 }
 
-.nav-item:nth-child(2) {
+.nav__item:nth-child(2) {
   margin-right: 70px;
 }
 
-.tel-link {
+.contact-list__tel-link {
   margin-left: 30px;
 }
 
-.mail-link,
-.tel-link {
+.contact-list__mail-link,
+.contact-list__tel-link {
   display: inline-flex;
   align-items: center;
 }
@@ -47,41 +41,48 @@ header a {
   margin-left: auto;
 }
 
-header a,
-footer a {
+.contact-list__mail-link,
+.contact-list__tel-link,
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   transition: color $transition-dur-and-func;
 }
 
-header a:hover,
-header a:focus,
-footer a:hover,
-footer a:focus {
+.contact-list__mail-link:hover,
+.contact-list__tel-link:hover,
+.nav__link:hover,
+.contact-list__mail-link:focus,
+.contact-list__tel-link:focus,
+.nav__link:focus {
   outline: 0px;
   color: $secondary-color;
 }
 
-.mail-link:hover .header-icon,
-.mail-link:focus .header-icon,
-.tel-link:hover .header-icon,
-.tel-link:focus .header-icon {
+.contact-list__mail-link:hover .contact-list__icon,
+.contact-list__mail-link:focus .contact-list__icon,
+.contact-list__tel-link:hover .contact-list__icon,
+.contact-list__tel-link:focus .contact-list__icon {
   fill: $secondary-color;
 }
-.header-icon {
-  fill: currentColor;
+.contact-list__icon {
+  fill: $primary-color;
   margin-right: 10px;
   transition: fill $transition-dur-and-func;
 }
 
-.nav-item {
+.nav__item {
   position: relative;
 }
 
-.current:hover,
-.current:focus {
+.nav__item--current:hover,
+.nav__item--current:focus {
   color: $secondary-color;
 }
 
-.current::after {
+.nav__item--current::after {
   content: "";
   position: absolute;
   top: 47.1px;

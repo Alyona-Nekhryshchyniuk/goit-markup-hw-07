@@ -1,11 +1,11 @@
-button {
+.button {
   cursor: pointer;
   font-family: inherit;
 }
 
-.hero-button,
-.subscribtion-button,
-.modal-form-button {
+.hero__button,
+.signUp-button,
+.modal-button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -20,11 +20,11 @@ button {
   transition: background-color $transition-dur-and-func;
 }
 
-.hero-button:hover,
-.hero-button:focus,
-.subscribtion-button:hover,
-.subscribtion-button:focus,
-.modal-form-button:hover,
-.modal-form-button:focus {
+.hero__button:hover,
+.hero__button:focus,
+.signUp-button:hover,
+.signUp-button:focus,
+.modal-button:hover,
+.modal-button:focus {
   background-color: $sporadic-background-color;
 }

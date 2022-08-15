@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.client-item:not(:last-child) {
+.client-icon-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -22,12 +22,12 @@
   border: 1px solid $secondary-color;
   outline: none;
 }
-.client-icon {
+.client-link__icon {
   fill: #afb1b8;
   transition: fill $transition-dur-and-func;
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client-link:hover .client-link__icon,
+.client-link:focus .client-link__icon {
   fill: $secondary-color;
 }

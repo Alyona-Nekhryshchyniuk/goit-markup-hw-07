@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/base";
+@import "./utils/visually-hidden";
 @import "./components/logo";
 @import "./components/container";
 @import "./components/section";
@@ -13,9 +14,9 @@
 @import "./components/clients";
 @import "./components/footer-start";
 @import "./components/footer-socials";
-@import "./components/footer-form";
+@import "./components/sign-form";
 @import "./components/portfolio-buttons";
 @import "./components/portfolio-thumbnail";
 @import "./components/modal-window";
-@import "./components/modal-window-form";
+@import "./components/modal";
 @import "./components/modal-checkbox";

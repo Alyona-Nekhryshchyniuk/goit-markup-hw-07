@@ -1,11 +1,16 @@
-.works-section {
+.works {
   padding-top: 100px;
 }
-.work-example {
+
+.works-list {
+  display: flex;
+}
+
+.works-list__item {
   position: relative;
 }
 
-.work-example > p {
+.works-list__label {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -20,14 +25,10 @@
   padding-bottom: 27px;
 }
 
-.section-heading {
+.section__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
-}
-
-.works-list {
-  display: flex;
 }

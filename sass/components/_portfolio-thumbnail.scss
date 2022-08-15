@@ -1,9 +1,9 @@
-.thumbnail-list {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-card {
+.portfolio-list__card {
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow $transition-dur-and-func;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.portfolio-card-overlay {
+.portfolio-list__card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,32 +30,32 @@
   padding: 63px 24px 0px;
 }
 
-.portfolio-card:hover {
+.portfolio-list__card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
+.portfolio-list__card:hover .portfolio-list__card-overlay {
   transform: translateY(0%);
 }
 
-.portfolio-card-description {
+.portfolio-list__card-description {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
 }
 
-.portfolio-card:nth-child(3n) {
+.portfolio-list__card:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio-card:nth-last-child(-n + 3) {
+.portfolio-list__card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio-card-title {
+.portfolio-list__card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -64,7 +64,7 @@
   margin-bottom: 4px;
 }
 
-.portfolio-card-subtitle {
+.portfolio-list__card-subtitle {
   line-height: 1.9;
   text-align: left;
   color: $tertiary-color;

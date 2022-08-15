@@ -16,16 +16,16 @@
   outline: none;
 }
 
-.social-icon {
+.social-link__icon {
   display: block;
   fill: #afb1b8;
   transition: fill var(--transition-dur-and-func);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-link:hover .social-link__icon,
+.social-link:focus .social-link__icon {
   fill: $quaternary-color;
 }
 
-.social-item:not(:last-child):not(:last-child) {
+.socials__item:not(:last-child):not(:last-child) {
   margin-right: 10px;
 }
