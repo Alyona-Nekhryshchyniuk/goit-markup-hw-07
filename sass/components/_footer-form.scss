@@ -1,9 +1,7 @@
 .sign-form__label {
   display: block;
   color: var(--quaternary-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
+  @include font(700, 14px, 1.17);
   text-transform: uppercase;
   margin-top: 13px;
 }
@@ -28,13 +26,14 @@
   padding-left: 16px;
   padding-right: 0px;
 
-&::placeholder {
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}}
+  &::placeholder {
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+}
 
 .sign-form__label-and-input {
   display: inline-block;

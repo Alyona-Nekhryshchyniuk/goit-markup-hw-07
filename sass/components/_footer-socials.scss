@@ -15,9 +15,7 @@
 }
 
 .social-call {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1;
+  @include font(700, 14px, 1.1);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--quaternary-color);

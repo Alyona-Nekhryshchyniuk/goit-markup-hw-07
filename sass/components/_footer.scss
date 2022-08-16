@@ -35,8 +35,14 @@
     outline: 0px;
     color: var(--secondary-color);
   }
+}
 
-  &[href*="maps"] {
-    color: var(--quaternary-color);
+[href*="maps"] {
+  color: var(--quaternary-color);
+
+  &:hover,
+  &:focus {
+    outline: 0px;
+    color: var(--secondary-color);
   }
 }

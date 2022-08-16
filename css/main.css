@@ -56,6 +56,12 @@ img {
   overflow: hidden;
 }
 
+.close-btn, .client-link, .pros-icon__bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -106,8 +112,8 @@ img {
 .hero__button,
 .signUp-button,
 .modal-button {
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
@@ -250,8 +256,8 @@ img {
   width: calc((100% - 90px) / 4);
 }
 .pros-list__heading {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -267,9 +273,6 @@ img {
   border-radius: 4px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .works {
@@ -316,8 +319,8 @@ img {
   padding-bottom: 30px;
 }
 .team-list__worker-name {
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
@@ -371,9 +374,6 @@ img {
 }
 
 .client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -430,8 +430,13 @@ img {
   outline: 0px;
   color: var(--secondary-color);
 }
-.address-list__link[href*=maps] {
+
+[href*=maps] {
   color: var(--quaternary-color);
+}
+[href*=maps]:hover, [href*=maps]:focus {
+  outline: 0px;
+  color: var(--secondary-color);
 }
 
 .footer-socials-container {
@@ -450,8 +455,8 @@ img {
 }
 
 .social-call {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -516,8 +521,8 @@ img {
   margin-bottom: 50px;
 }
 .filter-list .button {
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
@@ -659,9 +664,6 @@ img {
   border-radius: 50%;
   padding: 0;
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: border var(--transition-dur-and-func);
 }
 .close-btn:hover, .close-btn:focus {

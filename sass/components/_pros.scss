@@ -12,9 +12,7 @@
   }
 
   &__heading {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
+    @include font(700, 14px, 1.1);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
@@ -26,12 +24,10 @@
 }
 
 .pros-icon__bg {
+  @extend %flex;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

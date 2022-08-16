@@ -10,9 +10,7 @@
   border-radius: 50%;
   padding: 0;
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   transition: border var(--transition-dur-and-func);
 
   &:hover,

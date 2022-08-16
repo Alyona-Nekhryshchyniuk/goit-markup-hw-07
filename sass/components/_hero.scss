@@ -12,9 +12,7 @@
   padding-bottom: 200px;
 
   &__heading {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    @include font(900, 44px, 1.4);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--quaternary-color);
