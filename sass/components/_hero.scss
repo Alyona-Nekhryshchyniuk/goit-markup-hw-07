@@ -10,15 +10,15 @@
     url(../images/hero.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero__heading {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $quaternary-color;
-  width: 700px;
-  margin: 0px auto 30px auto;
+  &__heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--quaternary-color);
+    width: 700px;
+    margin: 0px auto 30px auto;
+  }
 }

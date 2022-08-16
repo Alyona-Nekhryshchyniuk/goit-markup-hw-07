@@ -1,5 +1,5 @@
-footer {
-  background-color: $primary-background-color;
+.footer {
+  background-color: var(--primary-background-color);
   padding-top: 63px;
   padding-bottom: 51px;
 }
@@ -11,30 +11,32 @@ footer {
   display: flex;
   align-items: baseline;
 }
-.footer a {
-  transition: color $transition-dur-and-func;
-}
 
-.footer a:hover,
-.footer a:focus {
-  outline: 0px;
-  color: $secondary-color;
-}
-
-address {
+.address {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
   font-style: normal;
 }
 
-address li {
-  color: $unique-color;
-}
-address li:not(:last-child) {
-  margin-bottom: 4px;
+.address-list__item {
+  color: var(--unique-color);
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 
-a[href*="maps"] {
-  color: $quaternary-color;
+.address-list__link {
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    outline: 0px;
+    color: var(--secondary-color);
+  }
+
+  &[href*="maps"] {
+    color: var(--quaternary-color);
+  }
 }

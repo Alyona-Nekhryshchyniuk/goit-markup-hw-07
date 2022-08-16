@@ -2,32 +2,33 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  .button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    border: 0px;
+    padding: 6px 25px;
+    transition: color var(--transition-dur-and-func),
+      background-color var(--transition-dur-and-func),
+      box-shadow var(--transition-dur-and-func);
+  }
 }
 
-.filter-list .button {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #f5f4fa;
-  border: 0px;
-  padding: 6px 25px;
-  transition: color $transition-dur-and-func,
-    background-color $transition-dur-and-func,
-    box-shadow $transition-dur-and-func;
-}
-
-.filter-list__item--active,
 .filter-list .button:hover,
-.filter-list .button:focus {
-  background-color: $secondary-color;
-  color: $quaternary-color;
+.filter-list .button:focus,
+.filter-list .filter-list__item--active {
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
   outline: 0px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
+
 .filter-list__item:not(:last-child) {
   margin-right: 8px;
 }

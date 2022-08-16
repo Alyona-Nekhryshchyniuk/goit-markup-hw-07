@@ -14,20 +14,21 @@
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border $transition-dur-and-func;
+  transition: border var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+  }
 }
 
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid $secondary-color;
-  outline: none;
-}
 .client-link__icon {
   fill: #afb1b8;
-  transition: fill $transition-dur-and-func;
-}
+  transition: fill var(--transition-dur-and-func);
 
-.client-link:hover .client-link__icon,
-.client-link:focus .client-link__icon {
-  fill: $secondary-color;
+  .client-link:hover &,
+  .client-link:focus & {
+    fill: var(--secondary-color);
+  }
 }

@@ -1,4 +1,12 @@
 .section {
   padding-top: 95px;
   padding-bottom: 95px;
+
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }

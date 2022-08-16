@@ -5,31 +5,31 @@
 
 .pros-list {
   display: flex;
-}
 
-.pros-list__item {
-  text-align: left;
-  width: calc((100% - 90px) / 4);
-}
+  &__item {
+    text-align: left;
+    width: calc((100% - 90px) / 4);
+  }
 
-.pros-list__heading {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 
-.pros-list__description {
-  line-height: 1.71;
-  color: $tertiary-color;
+  &__description {
+    line-height: 1.71;
+    color: var(--tertiary-color);
+  }
 }
 
 .pros-icon__bg {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-color: $secondary-background-color;
+  background-color: var(--secondary-background-color);
   margin-bottom: 30px;
   display: flex;
   align-items: center;

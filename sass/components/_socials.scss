@@ -8,22 +8,22 @@
   border-radius: 50%;
   padding: 12px;
   transition: background-color var(--transition-dur-and-func);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: $secondary-color;
-  outline: none;
-}
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    outline: none;
+  }
+  &__icon {
+    display: block;
+    fill: #afb1b8;
+    transition: fill var(--transition-dur-and-func);
 
-.social-link__icon {
-  display: block;
-  fill: #afb1b8;
-  transition: fill var(--transition-dur-and-func);
-}
-.social-link:hover .social-link__icon,
-.social-link:focus .social-link__icon {
-  fill: $quaternary-color;
+    .social-link:hover &,
+    .social-link:focus & {
+      fill: var(--quaternary-color);
+    }
+  }
 }
 
 .socials__item:not(:last-child):not(:last-child) {

@@ -2,84 +2,37 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
-.contact-list__item,
-.nav__item {
-  display: inline;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav {
   margin-left: 100px;
 }
 
-.nav__item:nth-child(1) {
-  margin-right: 55px;
-}
-
-.nav__item:nth-child(2) {
-  margin-right: 70px;
-}
-
-.contact-list__tel-link {
-  margin-left: 30px;
-}
-
-.contact-list__mail-link,
-.contact-list__tel-link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.contact-list {
-  color: $tertiary-color;
-  margin-left: auto;
-}
-
-.contact-list__mail-link,
-.contact-list__tel-link,
-.nav__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  transition: color $transition-dur-and-func;
-}
-
-.contact-list__mail-link:hover,
-.contact-list__tel-link:hover,
-.nav__link:hover,
-.contact-list__mail-link:focus,
-.contact-list__tel-link:focus,
-.nav__link:focus {
-  outline: 0px;
-  color: $secondary-color;
-}
-
-.contact-list__mail-link:hover .contact-list__icon,
-.contact-list__mail-link:focus .contact-list__icon,
-.contact-list__tel-link:hover .contact-list__icon,
-.contact-list__tel-link:focus .contact-list__icon {
-  fill: $secondary-color;
-}
-.contact-list__icon {
-  fill: $primary-color;
-  margin-right: 10px;
-  transition: fill $transition-dur-and-func;
+.nav__item,
+.contact-list__item {
+  display: inline;
 }
 
 .nav__item {
   position: relative;
+
+  &:nth-child(1) {
+    margin-right: 55px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 70px;
+  }
 }
 
 .nav__item--current:hover,
 .nav__item--current:focus {
-  color: $secondary-color;
+  color: var(--secondary-color);
 }
 
 .nav__item--current::after {
@@ -87,8 +40,50 @@
   position: absolute;
   top: 47.1px;
   left: 0;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   height: 4px;
   width: 100%;
   border-radius: 2px;
+}
+
+// CONTACTS LIST
+
+.contact-list {
+  color: var(--tertiary-color);
+  margin-left: auto;
+
+  &__tel-link {
+    margin-left: 30px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.contact-list__link,
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    outline: 0px;
+    color: var(--secondary-color);
+  }
+}
+
+.contact-list__icon {
+  fill: var(--primary-color);
+  margin-right: 10px;
+  transition: fill var(--transition-dur-and-func);
+}
+
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
+  fill: var(--secondary-color);
 }

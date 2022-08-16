@@ -1,5 +1,17 @@
 .footer-socials-container {
   margin-left: 70px;
+
+  .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-dur-and-func);
+  }
+  .social-link__icon {
+    fill: var(--quaternary-color);
+  }
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--secondary-color);
+  }
 }
 
 .social-call {
@@ -8,21 +20,5 @@
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: $quaternary-color;
-}
-
-.pros-list__heading,
-.social-call {
-}
-
-.footer-socials-container .social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $transition-dur-and-func;
-}
-.footer-socials-container .social-link__icon {
-  fill: $quaternary-color;
-}
-.footer-socials-container .social-link:hover,
-.footer-socials-container .social-link:focus {
-  background-color: $secondary-color;
+  color: var(--quaternary-color);
 }
